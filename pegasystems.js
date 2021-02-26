@@ -1,4 +1,4 @@
-
+// map relative url path to text content
 let textMap = new Map([
     ['home', 'Home'],
     ['dashboard', 'My Dashboards'],
@@ -24,6 +24,9 @@ function handleClientSideRouting() {
 window.addEventListener('load', handleClientSideRouting);
 window.addEventListener('hashchange', handleClientSideRouting);
 
+/**
+ * Callback to toggle display of options when create button is clicked
+ */
 function toggle() {
     let el = document.getElementById('createOptions');
     if (el.style.height === '120px') {
