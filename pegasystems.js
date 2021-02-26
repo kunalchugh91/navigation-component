@@ -17,7 +17,8 @@ function handleClientSideRouting() {
     let textContent;
     let url = window.location.href;
     let relativeURLPath = url.slice(url.lastIndexOf('/') + 1);
-    textContent = `This is ${textMap.get(relativeURLPath)} page`;
+    textContent = textMap.get(relativeURLPath) || 'Welcome';
+    textContent = `This is ${textContent} page`;
     paragraphElement.innerText = textContent;
 }
 

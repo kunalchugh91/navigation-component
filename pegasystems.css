@@ -71,7 +71,11 @@
     outline: none;
 }
 
-.searchContainer input::-webkit-input-placeholder, .searchContainer input::-moz-placeholder {
+.searchContainer input::-webkit-input-placeholder {
+    font-style: italic;
+}
+
+.searchContainer input::-moz-placeholder {
     font-style: italic;
 }
 
