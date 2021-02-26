@@ -78,6 +78,42 @@
     font-style: italic;
 }
 
+.createBtn {
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0px;
+    border: 0px;
+    background-color: inherit;
+    cursor: pointer;
+} 
+
+.createBtn i {
+    float: left;
+    min-width: 50px;
+    color: white;
+}
+
+.createBtn a {
+    text-decoration: none;
+}
+
+.createBtn span {
+    display: block;
+    text-align: left;
+    line-height: 1.8;
+    color: white;
+}
+
+#createOptions {
+    height: 0px;
+    transition: height 1s;
+    overflow-y: hidden;
+    white-space: nowrap;
+    background-color: #404040;
+}
+
 .middleBtnContainer {
     height: 40px;
 }

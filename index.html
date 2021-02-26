@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -7,124 +8,156 @@
     <script src="pegasystems.js"></script>
     <title>Title</title>
 </head>
+
 <body>
 
 
-<div style="height: 100vh; width: 100vw; position: relative;">
+    <div style="height: 100vh; width: 100vw; position: relative;">
 
-    <div id="mainNav">
-        <div class="topBtnGrp">
-            <div class="logoContainer">
-                <span>PEGA</span>
+        <div id="mainNav">
+            <div class="topBtnGrp">
+                <div class="logoContainer">
+                    <span>PEGA</span>
+                </div>
+
+                <div class="searchContainer">
+                    <i class="material-icons">search</i>
+                    <input type="text" placeholder="Search">
+                </div>
+
             </div>
 
-            <div class="searchContainer">
-                <i class="material-icons">search</i>
-                <input type="text" placeholder="Search">
+            <div class="middleBtnGrp">
+
+                <div class="createBtnContainer">
+                    <button tabindex="0" class="createBtn" type="button" onClick="toggle()">
+                        <i class="material-icons">cloud</i><span>Create</span>
+                    </button>
+                    <div id="createOptions">
+                        <div class="middleBtnContainer">
+                            <a href="/option1">
+                                <button tabindex="-1" class="middleBtn" type="button">
+                                    <i class="material-icons">cloud</i><span>Option1</span>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="middleBtnContainer">
+                            <a href="/option2">
+                                <button tabindex="-1" class="middleBtn" type="button">
+                                    <i class="material-icons">cloud</i><span>Option2</span>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="middleBtnContainer">
+                            <a href="/option3">
+                                <button tabindex="-1" class="middleBtn" type="button">
+                                    <i class="material-icons">cloud</i><span>Option3</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="middleBtnContainer">
+                    <a href="/home">
+                        <button tabindex="-1" class="middleBtn" type="button">
+                            <i class="material-icons">cloud</i><span>Home</span>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="middleBtnContainer">
+                    <a href="/dashboard">
+                        <button tabindex="-1" class="middleBtn" type="button">
+                            <i class="material-icons">favorite</i><span>My Dashboard</span>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="middleBtnContainer">
+                    <a href="/spaces">
+                        <button tabindex="-1" class="middleBtn" type="button">
+                            <i class="material-icons">attachment</i><span>Spaces</span>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="middleBtnContainer">
+                    <a href="/documents">
+                        <button tabindex="-1" class="middleBtn" type="button">
+                            <i class="material-icons">computer</i><span>Documents</span>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="middleBtnContainer">
+                    <a href="/bugs">
+                        <button tabindex="-1" class="middleBtn" type="button">
+                            <i class="material-icons">traffic</i><span>Bugs</span>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="middleBtnContainer">
+                    <a href="/epics">
+                        <button tabindex="-1" class="middleBtn" type="button">
+                            <i class="material-icons">favorite</i><span>Epics</span>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="middleBtnContainer">
+                    <a href="/goals">
+                        <button tabindex="-1" class="middleBtn" type="button">
+                            <i class="material-icons">cloud</i><span>Goals</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bottomBtnGrp">
+                <div class="bottomBtnContainer">
+                    <a href="/home">
+                        <button tabindex="-1" class="bottomBtn" type="button">
+                            <i class="material-icons">cloud</i><span>Home</span>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="bottomBtnContainer">
+                    <a href="/dashboard">
+                        <button tabindex="-1" class="bottomBtn" type="button">
+                            <i class="material-icons">favorite</i><span>My Dashboard</span>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="bottomBtnContainer">
+                    <a href="/spaces">
+                        <button tabindex="-1" class="bottomBtn" type="button">
+                            <i class="material-icons">attachment</i><span>Spaces</span>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="bottomBtnContainer">
+                    <a href="/documents">
+                        <button tabindex="-1" class="bottomBtn" type="button">
+                            <i class="material-icons">computer</i><span>Documents</span>
+                        </button>
+                    </a>
+                </div>
             </div>
 
         </div>
 
-        <div class="middleBtnGrp">
-            <div class="middleBtnContainer">
-                <a href="/home">
-                    <button tabindex="-1" class="middleBtn" type="button">
-                        <i class="material-icons">cloud</i><span>Home</span>
-                    </button>
-                </a>
-            </div>
-
-            <div class="middleBtnContainer">
-                <a href="/dashboard">
-                    <button tabindex="-1" class="middleBtn" type="button">
-                        <i class="material-icons">favorite</i><span>My Dashboard</span>
-                    </button>
-                </a>
-            </div>
-
-            <div class="middleBtnContainer">
-                <a href="/spaces">
-                    <button tabindex="-1" class="middleBtn" type="button">
-                        <i class="material-icons">attachment</i><span>Spaces</span>
-                    </button>
-                </a>
-            </div>
-
-            <div class="middleBtnContainer">
-                <a href="/documents">
-                    <button tabindex="-1" class="middleBtn" type="button">
-                        <i class="material-icons">computer</i><span>Documents</span>
-                    </button>
-                </a>
-            </div>
-
-            <div class="middleBtnContainer">
-                <a href="/bugs">
-                    <button tabindex="-1" class="middleBtn" type="button">
-                        <i class="material-icons">traffic</i><span>Bugs</span>
-                    </button>
-                </a>
-            </div>
-
-            <div class="middleBtnContainer">
-                <a href="/epics">
-                    <button tabindex="-1" class="middleBtn" type="button">
-                        <i class="material-icons">favorite</i><span>Epics</span>
-                    </button>
-                </a>
-            </div>
-
-            <div class="middleBtnContainer">
-                <a href="/goals">
-                    <button tabindex="-1" class="middleBtn" type="button">
-                        <i class="material-icons">cloud</i><span>Goals</span>
-                    </button>
-                </a>
-            </div>
-        </div>
-
-        <div class="bottomBtnGrp">
-            <div class="bottomBtnContainer">
-                <a href="/home">
-                    <button tabindex="-1" class="bottomBtn" type="button">
-                        <i class="material-icons">cloud</i><span>Home</span>
-                    </button>
-                </a>
-            </div>
-
-            <div class="bottomBtnContainer">
-                <a href="/dashboard">
-                    <button tabindex="-1" class="bottomBtn" type="button">
-                        <i class="material-icons">favorite</i><span>My Dashboard</span>
-                    </button>
-                </a>
-            </div>
-
-            <div class="bottomBtnContainer">
-                <a href="/spaces">
-                    <button tabindex="-1" class="bottomBtn" type="button">
-                        <i class="material-icons">attachment</i><span>Spaces</span>
-                    </button>
-                </a>
-            </div>
-
-            <div class="bottomBtnContainer">
-                <a href="/documents">
-                    <button tabindex="-1" class="bottomBtn" type="button">
-                        <i class="material-icons">computer</i><span>Documents</span>
-                    </button>
-                </a>
-            </div>
+        <div class="contentContainer">
+            <p id="content">Home Page</p>
         </div>
 
     </div>
-
-    <div class="contentContainer">
-        <p id="content">Home Page</p>
-    </div>
-
-</div>
 
 
 </body>
+
 </html>
